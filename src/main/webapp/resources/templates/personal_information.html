@@ -1,0 +1,92 @@
+<div class="text-center marginBot30">
+    <h3>Персональная информация</h3>
+</div>
+
+<div class="text-center">
+    <h4>ФИО на русском:</h4>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="lastName">Фамилия:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" ng-model="PersonalInformation.lastName" id="lastName"
+               placeholder="Введите фамилию">
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="firstName">Имя:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" ng-model="PersonalInformation.firstName" id="firstName"
+               placeholder="Введите имя">
+    </div>
+</div>
+
+<div class="form-group marginBot30">
+    <label class="control-label col-md-4" for="patronymic">Отчество:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" ng-model="PersonalInformation.patronymic" id="patronymic"
+               placeholder="Введите отчество">
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4">Пол:</label>
+    <div class="col-md-2">
+        <label class="radio-inline">
+            <input type="radio" name="sexPerson" ng-model="PersonalInformation.sexPerson"
+                   ng-change="updateSex()" value="male"> Мужской
+        </label>
+    </div>
+    <div class="col-md-2">
+        <label class="radio-inline">
+            <input type="radio" name="sexPerson" ng-model="PersonalInformation.sexPerson"
+                   ng-change="updateSex()" value="female"> Женский
+        </label>
+    </div>
+</div>
+
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="birthday">Дата рождения:</label>
+    <div class="col-md-4">
+        <input type="date" ng-model="PersonalInformation.birthday" class="form-control" id="birthday">
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="familyStatus" class="control-label col-md-4">Семейный статус:</label>
+    <div class="col-md-4">
+        <select class="form-control" id="familyStatus"
+                ng-options="option.name for option in selectSex track by option.id"
+                ng-model="PersonalInformation.familyStatus">
+        </select>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="citizenship" class="control-label col-md-4">Гражданство:</label>
+    <div class="col-md-4">
+        <select class="form-control" ng-model="PersonalInformation.citizenship" id="citizenship">
+            <option disabled selected value>Выберите гражданство</option>
+        </select>
+    </div>
+</div>
+
+<div class="form-group marginBot30">
+    <label for="nationality" class="control-label col-md-4">Национальность:</label>
+    <div class="col-md-4">
+        <select class="form-control" ng-model="PersonalInformation.nationality" id="nationality">
+            <option disabled selected value>Выберите национальность</option>
+        </select>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-xs-4 col-xs-offset-4">
+        <a ui-sref="form.document" class="btn btn-block btn-info">
+            Далее <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>
+

@@ -1,0 +1,130 @@
+<div class="text-center marginBot30">
+    <h3>Результаты вступительных испытаний</h3>
+</div>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2 well well-res">
+
+        <div class="row">
+            <div class="form-group">
+                <label class="control-label col-md-6" for="stateLanguage">Государственный язык:</label>
+                <div class="col-md-4">
+                    <select class="form-control" ng-model="Result.stateLanguage" id="stateLanguage">
+                        <option disabled selected value>Выберите язык</option>
+                        <option value="1">Белорусский</option>
+                        <option value="2">Русский</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label class="control-label col-md-6" for="certificateNumberStateLang">Номер сертификата:</label>
+                <div class="col-md-4">
+                    <input type="number" class="form-control" ng-model="Result.certificateNumberStateLang"
+                           id="certificateNumberStateLang">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label class="control-label col-md-6" for="resultStateLang">Результат:</label>
+                <div class="col-md-4">
+                    <input type="number" min=0 max=100 class="form-control" ng-model="Result.resultStateLang"
+                           id="resultStateLang">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2 well well-res">
+        <div class="row">
+            <div class="form-group">
+                <label class="control-label col-md-6" for="foreignLanguage">Иностранный язык:</label>
+                <div class="col-md-4">
+                    <select class="form-control" ng-model="Result.foreignLanguage" id="foreignLanguage">
+                        <option disabled selected value>Выберите язык</option>
+                        <option value="1">Английский</option>
+                        <option value="2">Немецкий</option>
+                        <option value="3">Французский</option>
+                        <option value="4">Испанский</option>
+                        <option value="5">Китайский</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label class="control-label col-md-6" for="certificateNumberForeign">Номер сертификата:</label>
+                <div class="col-md-4">
+                    <input type="number" class="form-control" ng-model="Result.certificateNumberForeign"
+                           id="certificateNumberForeign">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label class="control-label col-md-6" for="resultForeignLang">Результат:</label>
+                <div class="col-md-4">
+                    <input type="number" min=0 max=100 class="form-control" ng-model="Result.resultForeignLang"
+                           id="resultForeignLang">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2 well well-res">
+
+        <div class="row">
+            <div class="form-group">
+                <label class="control-label col-md-6" for="history">Результат по истории:</label>
+                <div class="col-md-4">
+                    <input type="number" min=0 max=100 class="form-control" ng-model="Result.history" id="history">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label class="control-label col-md-6" for="historyNumberCertificate">Номер сертификата:</label>
+                <div class="col-md-4">
+                    <input type="number" class="form-control" ng-model="Result.historyNumberCertificate"
+                           id="historyNumberCertificate">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row marginBot30">
+    <div class="col-md-8 col-md-offset-2 well well-res">
+
+        <div class="row">
+            <div class="form-group">
+                <label class="control-label col-md-6" for="certificate">Средний балл аттестата:</label>
+                <div class="col-md-4">
+                    <input type="number" min=0 max=100 class="form-control" ng-model="Result.certificate" id="certificate">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-xs-4 col-xs-offset-4">
+        <a ui-sref="form.privileges" class="btn btn-block btn-info">
+            Далее <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>

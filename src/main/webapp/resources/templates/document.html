@@ -1,0 +1,110 @@
+<div class="text-center marginBot30">
+    <h3>Документ удостоверяющий личность</h3>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="inputTypeDoc">Тип документа:</label>
+    <div class="col-md-4" >
+        <select class="form-control" id="inputTypeDoc" ng-model="Document.type">
+            <option value='total1' selected disabled>Паспорт РБ</option>
+        </select>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4">Серия и номер:</label>
+    <div class="col-md-4">
+
+        <div class="col-md-6">
+            <label for="seriaPassport">Серия</label>
+            <input type="text" class="form-control" id="seriaPassport" ng-model="Document.seriaPassport" placeholder="Серия" value="KH" disabled>
+        </div>
+
+        <div class="col-md-6">
+            <label for="numberPassport">Номер</label>
+            <input type="text" class="form-control" id="numberPassport" ng-model="Document.numberPassport" placeholder="Номер" value="1234567" disabled>
+        </div>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="personalNumber">Идентификационный номер:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" id="personalNumber" ng-model="Document.personalNumber" placeholder="Введите личный номер">
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="authority">Кем выдан:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" id="authority" ng-model="Document.authority" placeholder="Введите орган, выдавший паспорт">
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="dateIssue">Дата выдачи:</label>
+    <div class="col-md-4">
+        <input type="date" class="form-control" ng-model="Document.dateIssue" id="dateIssue" >
+    </div>
+</div>
+
+<div class="form-group marginBot30">
+    <label class="control-label col-md-4" for="dateExpiration">Дата окончания срока действия:</label>
+    <div class="col-md-4">
+        <input type="date" class="form-control" ng-model="Document.dateExpiration" id="dateExpiration">
+    </div>
+</div>
+
+<div class="text-center">
+    <h4>ФИО на белорусском:</h4>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="lastNameBel">Прозвішча:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" ng-model="Document.lastNameBel" id="lastNameBel"
+               placeholder="Увядзіце прозвішча">
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="firstNameBel">Імя:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" ng-model="Document.firstNameBel" id="firstNameBel"
+               placeholder="Увядзіце імя">
+    </div>
+</div>
+
+<div class="form-group marginBot30">
+    <label class="control-label col-md-4" for="patronymicBel">Імя па бацьку:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" ng-model="Document.patronymicBel" id="patronymicBel"
+               placeholder="Увядзіце імя па бацьку">
+    </div>
+</div>
+
+<div class="text-center">
+    <h4>Фамилия и имя на латинице:</h4>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="englName">Имя:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" id="englName" ng-model="Document.englName" placeholder="Введите имя на латинице">
+    </div>
+</div>
+
+<div class="form-group marginBot30">
+    <label class="control-label col-md-4" for="englSurname">Фамилия:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" id="englSurname" ng-model="Document.englSurname" placeholder="Введите фамилию на латинице">
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-xs-4 col-xs-offset-4">
+        <a ui-sref="form.education" class="btn btn-block btn-info">
+            Далее <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>

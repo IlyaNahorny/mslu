@@ -1,0 +1,122 @@
+<div class="text-center">
+    <h3>Льготы</h3>
+</div>
+
+<div class="row marginBot30">
+    <div class="form-group">
+        <div class="col-md-4">
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Privileges.no">нет</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Privileges.orphanhood">сиротство</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Privileges.disability">инвалидность 1, 2 гр.</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Privileges.childrenDeadMilitary">дети погибших военных</label>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Privileges.childrenDeadWorker">дети погибших раб. ОВД</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Privileges.article18 ">статья 18 закона о ЧАЭС</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Privileges.article13">ст. 13, 21-23 закона о ЧАЭС</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Privileges.largeFamily">многодетная семья</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Privileges.regionalOlympiad">победитель обл. олимп.</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Privileges.republicanOlympiad">победитель респ. олимп.</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Privileges.medal">золотая/серебр. медаль</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Privileges.diplomaHonors">диплом с отличием</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    <h3>Победитель олимпиады. Лауреат спец. фонда</h3>
+</div>
+
+<div class="row marginBot30">
+    <div class="form-group">
+        <div class="col-md-4">
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="WinnerOlympiads.no">нет</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="WinnerOlympiads.internationalOlympiad">международная
+                    олимпиада</label>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="WinnerOlympiads.republicanPlaces">1, 2, 3 места
+                    республиканской</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="WinnerOlympiads.laureate">лауреат спец. фонда Президента
+                    РБ</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="WinnerOlympiads.regionPlaces">1, 2, 3 место областной/минской
+                    городской</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    <h3>Предмет олимпиады</h3>
+    <h7>(если имеется)</h7>
+</div>
+
+<div class="row marginBot30">
+    <div class="form-group">
+        <div class="col-md-4">
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Subject.foreign">иностранный язык</label>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Subject.state">государственный язык</label>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="checkbox">
+                <label><input type="checkbox" ng-model="Subject.history">история</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-xs-4 col-xs-offset-4">
+        <a ui-sref="form.faculty_specialty" class="btn btn-block btn-info">
+            Далее <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>
+

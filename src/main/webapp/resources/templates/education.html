@@ -1,0 +1,128 @@
+<div class="text-center marginBot30">
+    <h3>Образование до поступления</h3>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4">Диплом/Аттестат:</label>
+    <div class="col-md-5">
+
+        <div class="col-md-4" style="padding-left: 0;">
+            <label for="numberCertificate">Номер</label>
+            <input type="text" class="form-control" id="numberCertificate" ng-model="Education.numberCertificate" placeholder="Номер">
+        </div>
+
+        <div class="col-md-6" style="padding-left: 0;">
+            <label for="dateIssueCertificate">Дата выдачи</label>
+            <input type="date" class="form-control" id="dateIssueCertificate" ng-model="Education.dateIssueCertificate">
+        </div>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="education">Уровень образования:</label>
+    <div class="col-md-4">
+        <select class="form-control" ng-model="Education.education" id="education">
+            <option disabled selected value>Выберите образование</option>
+            <option value="1">базовое</option>
+            <option value="2">среднее</option>
+            <option value="3">среднее специальное</option>
+            <option value="4">высшее</option>
+        </select>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="yearEducation">Год получения образования:</label>
+    <div class="col-md-4">
+        <input type="number" min=1950 max=2017 class="form-control" id="yearEducation" ng-model="Education.yearEducation" placeholder="Введите год получения">
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="typeEducation">Тип учебного заведения:</label>
+    <div class="col-md-4">
+        <select class="form-control" ng-model="Education.typeEducation" id="typeEducation">
+            <option disabled selected value>Выберите учебное заведения</option>
+            <option value="1">школа</option>
+            <option value="2">гимназия</option>
+            <option value="3">лицей</option>
+            <option value="4">училище</option>
+            <option value="5">колледж</option>
+            <option value="6">учреждение высшего образования</option>
+        </select>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4">Тип населенного пункта, в котором находится учреждение образования, которое окончил абитуриент:</label>
+    <div class="row">
+        <div class="col-md-4">
+            <label class="radio-inline">
+                <input type="radio" name="typeSettlement" ng-model="Education.typeSettlement" value="yes">городской
+            </label>
+
+            <label class="radio-inline">
+                <input type="radio" name="typeSettlement" ng-model="Education.typeSettlement" value="no">сельский
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="nameEducation">Полное наименование учреждения образования, которое окончил абитуриент:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" id="nameEducation" ng-model="Education.nameEducation" placeholder="Введите полное наименование">
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="firstSpecialty">Специальность:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" id="firstSpecialty" ng-model="Education.firstSpecialty" placeholder="Введите специальность">
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4" for="targetDirection">Целевое направление выдано:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" id="targetDirection" ng-model="Education.targetDirection" placeholder="Введите кем выдано">
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-md-4">Второе высшее:</label>
+    <div class="row">
+        <div class="col-md-4">
+            <label class="radio-inline">
+                <input type="radio" name="secondDegree" ng-model="Education.secondDegree" value="yes">Да
+            </label>
+
+            <label class="radio-inline">
+                <input type="radio" name="secondDegree" ng-model="Education.secondDegree" value="no">Нет
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="form-group marginBot30">
+    <label class="control-label col-md-4">Тип специальности:</label>
+    <div class="row">
+        <div class="col-md-4">
+            <label class="radio-inline">
+                <input type="radio" name="typeSpecialty" ng-model="Education.typeSpecialty" value="male">родственная
+            </label>
+
+            <label class="radio-inline">
+                <input type="radio" name="typeSpecialty" ng-model="Education.typeSpecialty" value="female">не родственная
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-xs-4 col-xs-offset-4">
+        <a ui-sref="form.CTresalt" class="btn btn-block btn-info">
+            Далее <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>

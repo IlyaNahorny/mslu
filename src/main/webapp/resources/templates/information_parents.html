@@ -1,0 +1,142 @@
+<div class="text-center marginBot30">
+    <h3>Сведения о родителях</h3>
+</div>
+
+
+<div class="row">
+    <div class="col-md-10 col-md-offset-1 well well-res">
+
+        <div class="text-center marginBot30">
+            <h5>Сведения об отце</h5>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-4" for="lastNameFather">Фамилия:</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="InformationParents.lastNameFather"
+                       id="lastNameFather" placeholder="Введите фамилию">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-4" for="firstNameFather">Имя:</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="InformationParents.firstNameFather"
+                       id="firstNameFather" placeholder="Введите имя">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-4" for="patronymicFather">Отчество:</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="InformationParents.patronymicFather"
+                       id="patronymicFather" placeholder="Введите отчество">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-4" for="placeWorkFather">Место работы:</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="InformationParents.placeWorkFather"
+                       id="placeWorkFather" placeholder="Введите место работы">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-4" for="positionFather">Занимаемая должность:</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="InformationParents.positionFather"
+                       id="positionFather" placeholder="Введите должность">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-4" for="placeResidenceFather">Место проживания (если не совпадает с Вашим
+                местом проживания):
+            </label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="InformationParents.placeResidenceFather"
+                       id="placeResidenceFather" placeholder="Введите место проживания">
+            </div>
+        </div>
+
+        <div class="form-group marginBot30">
+            <label class="control-label col-md-4" for="contactNumberFather">Контактный телефон:</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="InformationParents.contactNumberFather"
+                       id="contactNumberFather" placeholder="Введите контактный телефон">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row marginBot30">
+    <div class="col-md-10 col-md-offset-1 well well-res">
+        <div class="text-center marginBot30">
+            <h5>Сведения о матери</h5>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-4" for="lastNameMather">Фамилия:</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="InformationParents.lastNameMather"
+                       id="lastNameMather" placeholder="Введите фамилию">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-4" for="firstNameMather">Имя:</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="InformationParents.firstMameFather"
+                       id="firstNameMather" placeholder="Введите имя">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-4" for="patronymicMather">Отчество:</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="InformationParents.patronymicMather"
+                       id="patronymicMather" placeholder="Введите отчество">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-4" for="placeWorkMather">Место работы:</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="InformationParents.placeWorkMather"
+                       id="placeWorkMather" placeholder="Введите место работы">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-4" for="positionMather">Занимаемая должность:</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="InformationParents.positionMather"
+                       id="positionMather" placeholder="Введите должность">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-4" for="placeResidenceMather">Место проживания (если не совпадает с Вашим
+                местом проживания):
+            </label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="InformationParents.placeResidenceMather"
+                       id="placeResidenceMather" placeholder="Введите место проживания">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-4" for="contactNumberMather">Контактный телефон:</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="InformationParents.contactNumberMather"
+                       id="contactNumberMather" placeholder="Введите контактный телефон">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-xs-4 col-xs-offset-4">
+        <a ui-sref="form.contact" class="btn btn-block btn-info">
+            Далее <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>
